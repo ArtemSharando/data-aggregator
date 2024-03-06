@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+  db1_test:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: test_db1
+    ports:
+      - "5434:5432"
+
+  db2_test:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: test_db2
+    ports:
+      - "5435:5432"

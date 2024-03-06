@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    jdbc-url: jdbc:postgresql://localhost:5434/test_db1
+  second-datasource:
+    driver-class-name: org.postgresql.Driver
+    jdbc-url: jdbc:postgresql://localhost:5435/test_db2
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

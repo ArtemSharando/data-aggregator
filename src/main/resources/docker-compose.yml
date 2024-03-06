@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+  db1:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: data-base-1
+    ports:
+      - "5432:5432"
+
+  db2:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: data-base-2
+    ports:
+      - "5433:5432"

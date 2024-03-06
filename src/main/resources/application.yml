@@ -1,0 +1,22 @@
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    jdbc-url: jdbc:postgresql://localhost:5432/data-base-1
+    username: postgres
+    password: example
+  second-datasource:
+    driver-class-name: org.postgresql.Driver
+    jdbc-url: jdbc:postgresql://localhost:5433/data-base-2
+    username: postgres
+    password: example
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+springdoc:
+  api-docs:
+    enabled: true
+    paths: /api/**
